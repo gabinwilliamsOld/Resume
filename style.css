@@ -1,17 +1,79 @@
 /*Container for entire page*/
 #main{
   width: 100%
-  display: flex;
+  
+   
 }
 
-/*Contact Info (Might have to add flex property here)*/
-#header{
-  border: 2px solid red;
-  text-align: center;
-  height: 258px;
+/*HEADER*/
+
+.header{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 250px;
+  background-color: gainsboro;
+  padding: 20px;
 }
+
+  .pic{
+    
+    border-left: 10px solid #bf9515;
+    border-top: 10px solid #bf9515;
+    border-bottom: 10px solid #edebe1;
+    border-right: 10px solid #edebe1;
+    max-height: 200px;
+    max-width: 160px;
+    padding: 0;
+    
+  }
+
+  h2{
+    
+    max-height: 200px;
+    text-align: right;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+    
+  }
+
+  h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+  }
+
+    hr{
+      
+      color: #bf9515;
+      background-color: #bf9515;
+      height: 3px; 
+      max-width: 390px;
+      margin-right: 0;
+      padding: 0; 
+      margin-bottom: 5px;
+      margin-top: 5px;
+      width: 46%;
+    }
+
+    .sub_title{
+      flex-grow: 1;
+      align-self: flex-end;
+      
+      margin: 0;
+      text-align: right;
+    }
+
+  
+
+    
+  
 
 #summary{
+  display: flex;
   border: 2px solid purple;
   text-align: center;
 }
