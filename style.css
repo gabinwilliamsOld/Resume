@@ -1,0 +1,76 @@
+/*Container for entire page*/
+#main{
+  width: 100%
+  display: flex;
+}
+
+/*Contact Info (Might have to add flex property here)*/
+#header{
+  border: 2px solid red;
+  text-align: center;
+  height: 258px;
+}
+
+#summary{
+  border: 2px solid purple;
+  text-align: center;
+}
+/*Tech Skills Section*/
+/*I needed to add flex property to give children containers the flex ability*/
+.overview{
+  border: 2px solid orange;
+  justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*Overview for experience*/
+.overview-exp{
+  display: flex;
+  flex-wrap: wrap;
+  /*justify-content: space-between;*/
+  border: 2px solid brown;
+}
+
+
+/*title for skills section*/
+.title{
+  border: 2px solid blue;
+  width: 100%;
+  text-align: center;
+}
+
+/*title for experience section*/
+.overview-exp .title{
+  text-align: left;
+  width: 100%;
+} 
+
+/*container for jobs qualified for*/
+.job-wanted{
+  border: 2px solid green;
+}
+
+/*experience type container*/
+.type{
+  border: 2px solid gold;
+}
+
+/*year experience occured container*/
+.year{
+  border: 2px solid teal;
+}
+
+/*container for type and year*/
+/*needed additional layer to make the containers not wrap*/
+.type-year{
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  border: 2px solid brown;
+}
+
+#gpa{
+  border: 2px solid maroon;
+}
