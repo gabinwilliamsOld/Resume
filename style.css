@@ -1,13 +1,17 @@
 /*Container for entire page*/
 #main{
-  width: 100%
+  display: flex;
+  flex: 3;
+  flex-direction: column;
+  align-items: flex-start;
+ 
   
-   
 }
 
-/*HEADER*/
+/*HEADER START*/
 
 .header{
+  
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -17,22 +21,29 @@
   padding: 20px;
 }
 
-  .pic{
+.pic{
+  
+  display: flex; 
+  border-left: 10px solid #bf9515;
+  border-top: 10px solid #bf9515;
+  border-bottom: 10px solid #edebe1;
+  border-right: 10px solid #edebe1;
+  max-width: 170px;
+  max-height: 230px;
+  padding: 0;
     
-    border-left: 10px solid #bf9515;
-    border-top: 10px solid #bf9515;
-    border-bottom: 10px solid #edebe1;
-    border-right: 10px solid #edebe1;
-    max-height: 200px;
-    max-width: 160px;
-    padding: 0;
+  }
+
+  .header-text{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    text-align: right;
     
   }
 
   h2{
-    
-    max-height: 200px;
-    text-align: right;
     font-family: 'Roboto', sans-serif;
     font-size: 50px;
     font-weight: 300;
@@ -41,41 +52,98 @@
     
   }
 
+ 
   h3{
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
   }
 
-    hr{
+  hr{
       
-      color: #bf9515;
-      background-color: #bf9515;
-      height: 3px; 
-      max-width: 390px;
-      margin-right: 0;
-      padding: 0; 
-      margin-bottom: 5px;
-      margin-top: 5px;
-      width: 46%;
-    }
+    color: #bf9515;
+    background-color: #bf9515;
+    height: 3px; 
+    max-width: 390px;
+    margin-right: 0;
+    padding: 0; 
+    margin-bottom: 5px;
+    margin-top: 5px;
+    width: 46%;
+  }
 
-    .sub_title{
-      flex-grow: 1;
-      align-self: flex-end;
+   
+  .social{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: stretch;
+    align-self: flex-end;
+    padding: 0px 5px 10px 5px;
+    background: #bf9515;
+    border-radius: 5px;
+    align-content: center;
+    
+    
       
-      margin: 0;
-      text-align: right;
-    }
+       
+  }
 
+    
+
+  em{
+     
+    font-family: 'Roboto', sans-serif;
+    margin-left: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    color: black
+      
+      
+      
+  }
+
+  .fa{
+    margin-bottom: 0;
+    margin-right: 200px;
+    padding: 5px;
+    font-size: 15px;
+    width: 15px;
+    text-align: bottom;
+    text-decoration: none;
+    border-radius: 20%;
+
+  }
+
+  .fa-twitter {
+    margin-right: 172px;
+    background: #55ACEE;
+    color: white;
+      
+  }
+
+  .fa-google {
+      
+    background: #dd4b39;
+    color: white;
+  }
+
+  /*HEADER END*/
   
 
     
+#sidebar{
+  border: 3px solid green;
+  display:flex;
+  flex-direction: column;
+  flex: 1;
   
+}
 
 #summary{
   display: flex;
+  flex-direction: row;
   border: 2px solid purple;
-  text-align: center;
+  
 }
 /*Tech Skills Section*/
 /*I needed to add flex property to give children containers the flex ability*/
