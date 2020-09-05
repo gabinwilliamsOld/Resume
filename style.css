@@ -1,206 +1,138 @@
-/*Container for entire page*/
-#main{
-  display: flex;
-  flex: 3;
-  flex-direction: column;
-  align-items: flex-start;
- 
+.container {
+  max-width: 960px;
+  margin: auto;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+}
+
+.title{
+  text-align: right;
+
+}
+
+h1{
+  font-family: 'Roboto', sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  color: black;
   
 }
 
-/*HEADER START*/
+.hr_subtitle{
+      
+  color: #bf9515;
+  background-color: #bf9515;
+  height: 3px; 
+  max-width: 390px;
+  margin-right: 0;
+  padding: 0; 
+  margin-bottom: 5px;
+  margin-top: 5px;
+  width: 46%;
+}
 
-.header{
-  
+.hr_sidebar{
+  color: #bf9515;
+  background-color: #bf9515;
+  height: 3px; 
+  max-width: 390px;
+  margin-left: 0;
+  padding: 0; 
+  margin-bottom: 5px;
+  margin-top: 5px;
+  width: 46%;
+}
+
+.flex-grid {
+  color: black;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  height: 250px;
+  margin: auto -1rem 1rem;
+}
+
+.col {
   background-color: gainsboro;
-  padding: 20px;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  padding: 1rem;
+}
+
+.sidebar {
+  flex: 1;
+  
+  
 }
 
 .pic{
-  
-  display: flex; 
   border-left: 10px solid #bf9515;
   border-top: 10px solid #bf9515;
   border-bottom: 10px solid #edebe1;
   border-right: 10px solid #edebe1;
-  max-width: 170px;
+  max-width: 200px;
   max-height: 230px;
-  padding: 0;
+  
+}
+
+i{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.skills{
+  margin-bottom: 0;
+}
+
+
+
+.main {
+  flex: 3;
+}
+
+.fa{
+  margin-right: 200px;
+  padding: 5px;
+  font-size: 15px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5%;
+
+}
+
+.fa-twitter {
+  margin: 5px;
+  margin-right: 160px;
+  margin-left: 0px;
+  background: black;
+  color: white;
     
-  }
+}
 
-  .header-text{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    text-align: right;
-    
-  }
-
-  h2{
-    font-family: 'Roboto', sans-serif;
-    font-size: 50px;
-    font-weight: 300;
-    padding: 0;
-    margin: 0;
-    
-  }
-
- 
-  h3{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-  }
-
-  hr{
-      
-    color: #bf9515;
-    background-color: #bf9515;
-    height: 3px; 
-    max-width: 390px;
-    margin-right: 0;
-    padding: 0; 
-    margin-bottom: 5px;
-    margin-top: 5px;
-    width: 46%;
-  }
-
-   
-  .social{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: stretch;
-    align-self: flex-end;
-    padding: 0px 5px 10px 5px;
+.fa-github-square{
+  margin: 5px;
+  margin-right: 160px;
+  margin-left: 0px;
+  background: black;
+  color: white;
+}
+.social{
+    padding: 0px 5px 0px 5px;
     background: #bf9515;
     border-radius: 5px;
     align-content: center;
-    
-    
-      
-       
-  }
+  
+}
 
-    
-
-  em{
+em{
+  margin-left: 15px;
+  font-size: 14px;
+  font-weight: 500;
+  color: black;
+}
      
-    font-family: 'Roboto', sans-serif;
-    margin-left: 15px;
-    font-size: 14px;
-    font-weight: 500;
-    color: black
-      
-      
-      
-  }
-
-  .fa{
-    margin-bottom: 0;
-    margin-right: 200px;
-    padding: 5px;
-    font-size: 15px;
-    width: 15px;
-    text-align: bottom;
-    text-decoration: none;
-    border-radius: 20%;
-
-  }
-
-  .fa-twitter {
-    margin-right: 172px;
-    background: #55ACEE;
-    color: white;
-      
-  }
-
-  .fa-google {
-      
-    background: #dd4b39;
-    color: white;
-  }
-
-  /*HEADER END*/
-  
-
     
-#sidebar{
-  border: 3px solid green;
-  display:flex;
-  flex-direction: column;
-  flex: 1;
-  
-}
-
-#summary{
-  display: flex;
-  flex-direction: row;
-  border: 2px solid purple;
-  
-}
-/*Tech Skills Section*/
-/*I needed to add flex property to give children containers the flex ability*/
-.overview{
-  border: 2px solid orange;
-  justify-content: space-evenly;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-/*Overview for experience*/
-.overview-exp{
-  display: flex;
-  flex-wrap: wrap;
-  /*justify-content: space-between;*/
-  border: 2px solid brown;
-}
-
-
-/*title for skills section*/
-.title{
-  border: 2px solid blue;
-  width: 100%;
-  text-align: center;
-}
-
-/*title for experience section*/
-.overview-exp .title{
-  text-align: left;
-  width: 100%;
-} 
-
-/*container for jobs qualified for*/
-.job-wanted{
-  border: 2px solid green;
-}
-
-/*experience type container*/
-.type{
-  border: 2px solid gold;
-}
-
-/*year experience occured container*/
-.year{
-  border: 2px solid teal;
-}
-
-/*container for type and year*/
-/*needed additional layer to make the containers not wrap*/
-.type-year{
-  width: 100%;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  border: 2px solid brown;
-}
-
-#gpa{
-  border: 2px solid maroon;
-}

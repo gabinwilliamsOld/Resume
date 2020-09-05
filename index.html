@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -19,83 +18,29 @@
 </head>
 
 
-<body>
-  <header class="header">
-    <img class="pic" src="https://github.com/scoutsnknives/Resume/blob/master/Photos/Profile_Image.jpg?raw=true" alt="clickableimage">
-      <section class="header-text">
-        <h2>GABIN WILLIAMS<hr></h2>
-        <h3>Aspiring Developer</h3>
-      </section>
-          <section class="social">
-            <ul class="fa fa-google"><em>GabinWilliams@gmail.com</em>
-            </ul>
-            <ul class="fa fa-twitter"><em>twitter.com/GabinWilliams</em></ul>
-          </section>        
-          
-  </header>
-
-
-  <article id="sidebar">
-      <h3>Sidebar</h3>
-  </article>
-  
-  <article id="main">
-    <section id="summary">
-      <h3>Summary</h3>
-      <p>Lots of cool facts and personality traits here</p>
+<div class="container">
+  <div class="flex-grid">
+    <aside class="col sidebar">
+      <img class="pic" src="https://github.com/scoutsnknives/Resume/blob/master/Photos/Profile_Image.jpg?raw=true" alt="clickableimage">
+      <h2>Contact me</h2>
+      <i class="fa fa-address-book fa-lg" aria-hidden="true"><em>Address</em></i> 
+      <i class="fa fa-phone-square fa-lg" aria-hidden="true"><em>Phone</em></i>
+      <i class="fa fa-envelope fa-lg" aria-hidden="true"><em>Email</em></i>
+      <h2 class="skills">Skills</h2>
+      <hr class="hr_sidebar">
+      <p>In CSS, it has a flex property of 1, meaning it takes up 1 unit (whatever that might be) of the available space.<p>
+      <h2>Education</h2>
+      <p>In CSS, it has a flex property of 1, meaning it takes up 1 unit (whatever that might be) of the available space.<p>
+    </aside>
+    <section class="col main">
+      <h1 class="title">GABIN WILLIAMS<hr class="hr_subtitle"></h1>
+        <h3 class="title">Aspiring Developer</h3>
+      <section class="social">
+        <i class="fa fa-github-square fa-3x" aria-hidden="true"><em>github.com/scoutsnknives</em></i>
+        <i class="fa fa-twitter"><em>twitter.com/GabinWilliams</em></i>
+      </section> 
+      <p>In CSS, it has a flex property of 3, meaning it takes up 3 units (whatever that might be) of the available space.<p>
+      <p>This means, in total we have 4 units of space (1 + 3 = 4) which then renders the sidebar at 25% and the main content area as 75%</p>
     </section>
-    <section class="overview"> 
-        <h4 class="title">Technical Skills</h4>
-        <div class="job-wanted">
-          <h3 class="list-title">BA</h3>
-          <ul class="bullets">
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-          </ul>
-        </div>
-        <div class="job-wanted">
-          <h3 class="list-title">PM</h3>
-          <ul class="bullets">
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-          </ul>
-        </div>
-     </section>
-     <section class="overview-exp">
-      <h4 class="title">Prof Exp</h4>
-      <div class="type-year">
-        <div class="type">
-          <h4 class="list-title">Job1</h4>
-          <ul class="bullets">
-           <li>1qwertyuiop qwertyuiop qwertyuiop qwertyuiop qwetyuiop qwertyuio qwui </li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-          </ul>
-        </div>
-        <div class="year">
-          <h4 class="list-title">Year1 1234567890 qweriop
-          </h4>
-        </div>
-       </div>
-    </section>
-    <section class="overview-exp">
-        <h4 class="title">Ed Exp</h4>
-        <div class="type-year">
-        <div class="type">
-          <h4 class="major">Major11qwertyuiop qwertyuiop qwertyuiop qwertyuiop qwetyuiop qwertyuio qwui</h4>
-          <p class="school-info">School<br>Location</p>
-        </div>
-        <h4 id="gpa">GPA: 1</h4>
-        <div class="year">
-          <h4 class="list-title">Year1 1qwertyuiop qwertyuiop qwertyuiop qwertyuiop qwetyuiop qwertyuio qwui</h4>
-        </div>
-      </div>
-    </section>
-  </article>
-</body>
-</html>
+  </div>
+</div>
