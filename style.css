@@ -75,8 +75,8 @@ h2 {
 .pic{
   border-left: 10px solid #bf9515;
   border-top: 10px solid #bf9515;
-  border-bottom: 10px solid #edebe1;
-  border-right: 10px solid #edebe1;
+  border-bottom: 10px solid rgb(228, 225, 216);
+  border-right: 10px solid rgb(228, 225, 216);
   max-width: 200px;
   max-height: 230px;
 }
