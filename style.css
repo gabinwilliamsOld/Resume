@@ -25,15 +25,13 @@
 }
 
 .sidebar {
-  flex: 1;
-   
+  flex: 1; 
 }
 
 
 
 .title{
   text-align: right;
-
 }
 
 h1{
@@ -46,11 +44,9 @@ h1{
 
 h2 {
   color: black;
-  
 }
 
 .hr_subtitle{
-      
   color: #bf9515;
   background-color: #bf9515;
   height: 2px; 
@@ -71,8 +67,7 @@ h2 {
   padding: 0; 
   margin-bottom: 5px;
   margin-top: 5px;
-  width: 45%;
-  
+  width: 45%;  
 }
 
 
@@ -84,21 +79,16 @@ h2 {
   border-right: 10px solid #edebe1;
   max-width: 200px;
   max-height: 230px;
-  
 }
 
 i{
   display: flex;
-  flex-wrap: wrap;
-  
+  flex-wrap: wrap; 
 }
 
 .skills{
   margin-bottom: 0;
 }
-
-
-
 
 
 .fa{
@@ -109,7 +99,6 @@ i{
   text-align: center;
   text-decoration: none;
   border-radius: 5%;
-
 }
 
 .fa-twitter {
@@ -117,8 +106,7 @@ i{
   margin-right: 160px;
   margin-left: 0px;
   background: black;
-  color: white;
-    
+  color: white; 
 }
 
 .fa-github-square{
@@ -132,9 +120,7 @@ i{
     padding: 0px 5px 0px 5px;
     background: #bf9515;
     border-radius: 5px;
-    align-content: center;
-    
-  
+    align-content: center;  
 }
 
 em{
@@ -143,7 +129,6 @@ em{
   font-style: normal;
   font-weight: 500;
   color: black;
-
 }
 
 ul{
